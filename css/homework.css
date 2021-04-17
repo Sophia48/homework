@@ -1,0 +1,91 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+  .wrapper {
+  width: 100%;
+  overflow: hidden; /*скрыть то что вылазит за рамки вашего экрана */
+}
+.header,
+.main,
+footer {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+/* header */
+.header { 
+  padding: 80px;
+  margin-left: auto;
+  margin-right: auto; 
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+}
+.menu  {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.menu li a {
+  text-decoration: none;
+  transition: 0.5s;
+  text-transform: uppercase;
+  transform: translate(0.5s);
+}
+.menu li a:hover { 
+  color: rgb(0, 250, 12);
+  border-bottom: 3px solid;
+}
+article {
+  width: 50%;
+  padding: 0 61px;
+  margin: 80px 0;
+}
+@media (max-width: 768px) {
+  article {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+article img {
+  width: 100%;
+}
+.artice-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ckategori {
+  margin: 40px 0;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+article h2 {
+  margin-bottom: 45px;
+  font-size: 30px;
+}
+ input { 
+  height: 60px;
+  width: 165px;
+}
+input[value="Load more"] {
+  border:1px solid #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.btn {
+  text-align: center;
+}
